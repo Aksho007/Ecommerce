@@ -6,19 +6,20 @@ import { Badge } from '@mui/material';
 
 const Container = styled.div`
       height: 60px;
+      
 
 `;
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: space-between;
 `;
 
 const Left = styled.div`
     flex:1;
     display: flex;
-    align-item: center;
+    align-items: center;
 `;
 const Language = styled.span`
     font-size: 14px;
@@ -28,7 +29,7 @@ const Language = styled.span`
 const SearchContainer = styled.div`
     border: 1px solid lightgray;
     display: flex;
-    align-item: center;
+    align-items: center;
     margin-left: 25px;
     padding: 3px;
 `;
@@ -46,16 +47,13 @@ const Center = styled.div`
 
 const Logo = styled.h1`
     font-weight: bold;
-    font-size: 12px;
-    display: flex;
-    align-item: center;
-    flex-direction: column;
+   
 `
 
 const Right = styled.div`
     flex:1;
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: flex-end;
     
 `;
@@ -74,23 +72,23 @@ const Navbar = () => {
             EN
           </Language>
           <SearchContainer>
-            <Input/>
-            <Search style = {{color:"gray", fontSize:20}}/>
+            <Input />
+            <Search style={{ color: "gray", fontSize: 20 }} />
           </SearchContainer>
         </Left>
         <Center>
           <Logo>
             SHOPIFY.
           </Logo>
-          </Center>
+        </Center>
         <Right>
           <MenuItem>RESISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
-              <Badge badgeContent={8} color="primary">
-                <ShoppingCartOutlinedIcon/>
-              </Badge>
-          
+            <Badge badgeContent={8} color="primary">
+              <ShoppingCartOutlinedIcon />
+            </Badge>
+
           </MenuItem>
         </Right>
       </Wrapper>
