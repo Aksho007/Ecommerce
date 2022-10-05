@@ -4,12 +4,13 @@ import Announcement from "../components/Announcements";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
- 
+  ${mobile({ padding: "10px" })}
 `;
 
 const Title = styled.h1`
@@ -35,7 +36,7 @@ const TopButton = styled.button`
 `;
 
 const TopTexts = styled.div`
-
+    ${mobile({ display: "none" })}
 `;
 const TopText = styled.span`
   text-decoration: underline;
@@ -46,7 +47,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
-  
+  ${mobile({ flexDirection: "colunm" })}
 `;
 
 const Info = styled.div`
@@ -56,7 +57,7 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
-
+  ${mobile({ flexDirection: "colunm" })}
 `;
 
 const ProductDetail = styled.div`
@@ -105,12 +106,14 @@ const ProductAmountContainer = styled.div`
 const ProductAmount = styled.div`
   font-size: 24px;
   margin: 5px;
+  ${mobile({ margin: "5px 15px" })}
  
 `;
 
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
+  ${mobile({ marginBottom: "20px" })}
 
 `;
 
