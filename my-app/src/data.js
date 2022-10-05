@@ -51,6 +51,7 @@ export const categories = [
         img: "https://cdn.luxe.digital/media/2019/09/12084906/casual-dress-code-men-street-style-luxe-digital-1-943x1100.jpg.webp ",
         title: "CASUAL WEAR",
     },
+
 ];
 
 export const popularProducts = [
